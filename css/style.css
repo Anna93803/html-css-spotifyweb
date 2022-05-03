@@ -8,7 +8,7 @@
 /* Common */
 :root {
     --color-white: white;
-    --color-text: #a3a3a3;
+    --color-text: #5d6066;
     --color-black: #000000;
 }
 
@@ -141,6 +141,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    background-color: #141922;
+    /* overflow: hidden; */
 }
 
 .main-top {
@@ -161,8 +163,78 @@ body {
 
 .main-center {
     flex-grow: 1;
+    /* overflow: auto; */
 }
 
+.list-main-center {
+    padding: 1.875rem 0;
+}
+
+.list-main-center ul {
+    display: flex;
+    justify-content: center;
+}
+
+.list-main-center ul li {
+    list-style: none;
+    padding-right: 2.8125rem;
+}
+
+.list-main-center ul li:last-child {
+    padding-right: 0;
+}
+
+.list-main-center ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    font-size: .9375rem;
+    color: var(--color-text);
+}
+
+.albums-container {
+    padding-left: 1.25rem;
+}
+
+.albums-container h2 {
+    color: var(--color-white);
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.albums-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    gap: 1.5625rem;
+    padding: 2.1875rem 0;
+}
+
+.album {
+    flex-basis: calc(100% / 6 - 3.125rem);
+}
+
+.album-img img {
+    width: 100%;
+}
+
+.album-title {
+    text-align: center;
+    color: var(--color-white);
+    padding-top: .8125rem;
+    font-weight: 700;
+}
+
+.popular-artists .album-img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.albums-container p {
+    color: var(--color-text);
+    padding-top: .375rem;
+    font-size: .8125rem;
+}
 /* Play-bar */
 .play-bar {
     flex-shrink: 0;
