@@ -6,6 +6,11 @@
 }
 
 /* Common */
+:root {
+    --color-white: white;
+    --color-text: #a3a3a3;
+    --color-black: black;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
@@ -29,16 +34,107 @@ body {
     flex-direction: column;
     flex-shrink: 0;
     width: 200px;
-    /* debug*/
-    background-color: blue;
+    padding: .5rem;
+    background-color: var(--color-black);
+}
+
+.logo {
+    max-width: 130px;
+    padding: .625rem 0;
+}
+
+.icons-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: .375rem;
+}
+
+.icons {
+    max-width: 20px;
+}
+
+.icons img {
+    width: 100%;
+}
+
+.icone-sidebar a {
+    display: inline-block;
+    color: var(--color-white);
+    text-decoration: none;
+    padding-left: .5rem;
 }
 
 .playlist-container {
     flex-grow: 1;
-    /* debug */
-    padding: 3.125rem 0;
+    color: var(--color-white);
 }
 
+.add-playlist {
+    padding-top: 1.25rem;
+}
+
+.add-list {
+    padding: .625rem 0;
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    color: var(--color-text);
+}
+
+.add-list::before {
+    content: "+";
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-text);
+    color: var(--color-black);
+    display: block;
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: 600;
+}
+
+.list-playlist {
+    padding: 1.25rem 0;
+    color: var(--color-text);
+}
+
+.list-playlist ul li {
+    padding-bottom: .9375rem;
+}
+
+.install-app {
+    padding: .5rem 0;
+    color: var(--color-text);
+}
+
+.account {
+    padding: .5rem 0;
+}
+
+.install-app,
+.account {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.install-app img,
+.account img {
+    max-width: 20px;
+}
+
+.install-app span {
+    font-size: .875rem;
+}
+
+.account img {
+    clip-path: circle();
+    background-color: var(--color-text);
+}
+
+.account span {
+    color: var(--color-white);
+}
 /* Main-Content */
 .main-content {
     display: flex;
