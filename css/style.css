@@ -9,8 +9,9 @@
 :root {
     --color-white: white;
     --color-text: #a3a3a3;
-    --color-black: black;
+    --color-black: #000000;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
@@ -140,14 +141,22 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    /* debug */
-    background: pink;
 }
 
 .main-top {
     flex-shrink: 0;
-    /* debug */
-    background-color: aquamarine;
+    text-align: right;
+    background-color: #080b12;
+    padding: 1.25rem .5rem;
+}
+
+.btn {
+    padding: .625rem 1.5625rem;
+    border-radius: 25px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border-color: var(--color-white);
+    cursor: pointer;
 }
 
 .main-center {
