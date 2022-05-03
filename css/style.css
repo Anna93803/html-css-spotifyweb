@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 200px;
+    /* debug*/
+    background-color: blue;
+}
+
+.playlist-container {
+    flex-grow: 1;
+    /* debug */
+    padding: 3.125rem 0;
+}
+
+/* Main-Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* debug */
+    background: pink;
+}
+
+.main-top {
+    flex-shrink: 0;
+    /* debug */
+    background-color: aquamarine;
+}
+
+.main-center {
+    flex-grow: 1;
+}
+
+/* Play-bar */
+.play-bar {
+    flex-shrink: 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    /*debug */
+    background: aqua;
+}
