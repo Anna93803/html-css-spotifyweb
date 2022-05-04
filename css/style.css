@@ -10,6 +10,7 @@
     --color-white: white;
     --color-text: #5d6066;
     --color-black: #000000;
+    --color-line: #adff2f;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
@@ -47,7 +48,7 @@ body {
 .icons.before::before {
     content: "";
     display: block;
-    border-left: .1875rem solid #adff2f;
+    border-left: .1875rem solid var(--color-line);
     position: absolute;
     left: -0.9375rem;
     height: 30px;
@@ -80,7 +81,7 @@ body {
 
 .icone-sidebar a {
     display: inline-block;
-    color: var(--color-white);
+    color: var(--color-text);
     text-decoration: none;
     padding-left: .5rem;
 }
@@ -133,6 +134,10 @@ body {
     color: var(--color-text);
 }
 
+.install-app img {
+    opacity: 0.6;
+}
+
 .account {
     padding: .5rem 0;
 }
@@ -183,6 +188,7 @@ body {
     color: var(--color-white);
     border-color: var(--color-white);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .main-center {
@@ -299,7 +305,8 @@ body {
     font-weight: 700;
 }
 
-.name-song p {
+.name-song a {
+    text-decoration: none;
     color: var(--color-text);
 }
 
@@ -319,10 +326,12 @@ body {
 
 .icone-bar i {
     padding-right: 1.5625rem;
+    cursor: pointer;
 }
 
 .icone-bar i:nth-child(3) {
     font-size: 30px;
+    transition: 0.3s;
 }
 
 .box:last-child {
@@ -340,6 +349,7 @@ body {
 }
 
 .scroll-bar {
+    position: relative;
     height: .1875rem;
     width: 100%;
     background-color: var(--color-text);
@@ -353,6 +363,7 @@ body {
 }
 
 .scroll-volume {
+    position: relative;
     height: .1875rem;
     width: 10%;
     background-color: var(--color-text);

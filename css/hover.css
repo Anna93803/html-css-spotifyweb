@@ -1,0 +1,113 @@
+/* Sidebar */
+.icone-sidebar a:hover,
+.list-playlist li:hover,
+.add-playlist:hover,
+.add-list:hover,
+.install-app:hover,
+.list-main-center a:hover,
+.favorites i:hover  {
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.icons img:hover {
+    opacity: 1;
+}
+
+.add-list:hover::before {
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.install-app img:hover {
+    opacity: 1;
+}
+/* Main-content */
+.main-top .btn:hover {
+    transform: scale(1.1);
+}
+
+.list-main-center ul li:first-child::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 35px;
+    background-color: var(--color-line);
+    margin: .125rem auto;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    content: "";
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.overlay:hover::after {
+    display: block;
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+    color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    font-size: 3.125rem;
+    transition: 0.3s;
+}
+
+.album-img.overlay:hover .display-none {
+    display: block;
+}
+
+/* Play-bar */
+.name-song a:hover {
+    border-bottom: .0625rem solid var(--color-text);
+    cursor: pointer;
+}
+
+.icone-bar i:nth-child(3):hover {
+    transform: scale(1.1);
+}
+
+.play-line-time {
+    position: relative;
+    height: 3px;
+    width: 30%;
+    background-color: #b4b4b4;
+}
+
+.play-line-time::after {
+    content: "";
+    display: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    position: absolute;
+    bottom: -0.3125rem;
+    right: -0.25rem;
+    transition: 0.3s;
+}
+
+.play-line-time:hover::after {
+    display: block;
+}
+
+.play-line-time:hover {
+    background-color: var(--color-line);
+    cursor: pointer;
+}

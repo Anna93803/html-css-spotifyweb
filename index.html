@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- /Fontawesome -->
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/hover.css">
         <title>Spotify</title>
     </head>
     <body>
@@ -41,7 +42,9 @@
                     <div class="playlist-container">
                         <div class="add-playlist">
                             <h4>PLAYLIST</h4>
-                            <div class="add-list">Crea Playlist</div>
+                            <div class="add-list">
+                                <span>Playlist</span>
+                            </div>
                         </div>
                         <div class="list-playlist">
                             <ul>
@@ -87,7 +90,8 @@
                             <h2>Recently played</h2>
                             <div class="row">
                                 <div class="album">
-                                    <div class="album-img">
+                                    <div class="album-img overlay">
+                                        <i class="fa-regular fa-circle-play display-none"></i>
                                         <img src="./img/metal_lifting.jpg" alt="cover metal">
                                     </div>
                                     <div class="album-title">
@@ -96,7 +100,8 @@
                                     </div>
                                 </div>
                                 <div class="album">
-                                    <div class="album-img">
+                                    <div class="album-img overlay">
+                                        <i class="fa-regular fa-circle-play display-none"></i>
                                         <img src="./img/stranger.jpeg" alt="cover stranger">
                                     </div>
                                     <div class="album-title">
@@ -105,7 +110,8 @@
                                     </div>
                                 </div>
                                 <div class="album">
-                                    <div class="album-img">
+                                    <div class="album-img overlay">
+                                        <i class="fa-regular fa-circle-play display-none"></i>
                                         <img src="./img/aquietplace.jpeg" alt="cover aquitplace">
                                     </div>
                                     <div class="album-title">
@@ -114,7 +120,8 @@
                                     </div>
                                 </div>
                                 <div class="album">
-                                    <div class="album-img">
+                                    <div class="album-img overlay">
+                                        <i class="fa-regular fa-circle-play display-none"></i>
                                         <img src="./img/split.jpeg" alt="cover split">
                                     </div>
                                     <div class="album-title">
@@ -123,7 +130,8 @@
                                     </div>
                                 </div>
                                 <div class="album">
-                                    <div class="album-img">
+                                    <div class="album-img overlay">
+                                        <i class="fa-regular fa-circle-play display-none"></i>
                                         <img src="./img/cure.jpeg" alt="cover cure">
                                     </div>
                                     <div class="album-title">
@@ -132,7 +140,8 @@
                                     </div>
                                 </div>
                                 <div class="album">
-                                    <div class="album-img">
+                                    <div class="album-img overlay">
+                                        <i class="fa-regular fa-circle-play display-none"></i>
                                         <img src="./img/sinister.jpeg" alt="cover sinister">
                                     </div>
                                     <div class="album-title">
@@ -146,7 +155,8 @@
                                 <p>Più ascolti,più accurati saranno i suggerimenti.</p>
                                 <div class="row">
                                     <div class="album">
-                                        <div class="album-img">
+                                        <div class="album-img overlay">
+                                            <i class="fa-regular fa-circle-play display-none"></i>
                                             <img src="./img/radar.jpeg" alt="cover radar">
                                         </div>
                                         <div class="album-title">
@@ -154,7 +164,8 @@
                                         </div>
                                     </div>
                                     <div class="album">
-                                        <div class="album-img">
+                                        <div class="album-img overlay">
+                                            <i class="fa-regular fa-circle-play display-none"></i>
                                             <img src="./img/mixdaily.jpeg" alt="cover mix">
                                         </div>
                                         <div class="album-title">
@@ -168,7 +179,8 @@
                                 <p>Più ascolti,più accurati saranno i suggerimenti.</p>
                                 <div class="row">
                                     <div class="album">
-                                        <div class="album-img">
+                                        <div class="album-img overlay">
+                                            <i class="fa-regular fa-circle-play display-none"></i>
                                             <img src="./img/youg.jpeg" alt="cover young">
                                         </div>
                                         <div class="album-title">
@@ -176,7 +188,8 @@
                                         </div>
                                     </div>
                                     <div class="album">
-                                        <div class="album-img">
+                                        <div class="album-img overlay">
+                                            <i class="fa-regular fa-circle-play display-none"></i>
                                             <img src="./img/einaudi.jpeg" alt="cover einaudi">
                                         </div>
                                         <div class="album-title">
@@ -199,7 +212,7 @@
                             </div>
                             <div class="name-song">
                                 <h4>Sinister</h4>
-                                <p>Brano nome</p>
+                                <a href="#">Brano nome</a>
                             </div>
                             <div class="favorites">
                                 <i class="fa-regular fa-heart"></i>
@@ -216,18 +229,21 @@
                             <i class="fa-solid fa-arrow-rotate-right"></i>
                         </div>
                         <div class="time-line">
-                            <div class="bar-minute-left">0:25</div>
-                            <div class="scroll-bar"></div>
-                            <div class="bar-minute-right">4:35</div>
+                            <div class="bar-minute">0:25</div>
+                            <div class="scroll-bar">
+                                <div class="play-line-time"></div>
                             </div>
+                            <div class="bar-minute">4:35</div>
                         </div>
-                        <div class="box">
-                            <div class="volume-box">
-                                <i class="fa-solid fa-list"></i>
-                                <i class="fa-solid fa-display"></i>
-                                <i class="fa-solid fa-volume-high"></i>
-                            </div>
-                            <div class="scroll-volume"></div>
+                    </div> 
+                    <div class="box">
+                        <div class="volume-box">
+                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-display"></i>
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                        <div class="scroll-volume">
+                            <div class="play-line-time"></div>
                         </div>
                     </div>
                 </div>
