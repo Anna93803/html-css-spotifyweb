@@ -27,7 +27,7 @@ body {
 .container {
     display: flex;
     flex-grow: 1;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Sidebar */
@@ -75,6 +75,7 @@ body {
 
 .icons img {
     width: 100%;
+    opacity: 0.6;
 }
 
 .icone-sidebar a {
@@ -87,7 +88,9 @@ body {
 .playlist-container {
     flex-grow: 1;
     color: var(--color-white);
-    /* overflow: hidden; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .add-playlist {
@@ -117,7 +120,7 @@ body {
 .list-playlist {
     padding: 1.25rem 0;
     color: var(--color-text);
-    /* overflow: auto; */
+    overflow: auto;
 }
 
 .list-playlist ul li {
@@ -164,7 +167,6 @@ body {
     flex-direction: column;
     flex-grow: 1;
     background-color: #141922;
-    /* overflow: hidden; */
 }
 
 .main-top {
@@ -185,7 +187,7 @@ body {
 
 .main-center {
     flex-grow: 1;
-    /* overflow: hidden; */
+    overflow-y: scroll
 }
 
 .list-main-center {
@@ -217,7 +219,6 @@ body {
 
 .albums-container {
     padding-left: 1.25rem;
-    /* overflow: auto; */
 }
 
 .albums-container h2 {
@@ -269,8 +270,14 @@ body {
 
 .box-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap: 1.875rem;
+}
+
+.box-large {
+    flex-basis: 100%;
+    max-width: 600px;
+    flex-grow: 1;
 }
 
 .box-song {
@@ -305,10 +312,6 @@ body {
     color: var(--color-text);
 }
 
-.box:nth-child(2) {
-    flex-grow: 1;
-}
-
 .icone-bar {
     text-align: center;
     font-size: 1.25rem;
@@ -322,9 +325,11 @@ body {
     font-size: 30px;
 }
 
-.play-bar .box:nth-child(2) {
+.box:last-child {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    max-width: 200px;
 }
 
 .time-line {
@@ -336,15 +341,23 @@ body {
 
 .scroll-bar {
     height: .1875rem;
-    width: 50%;
+    width: 100%;
     background-color: var(--color-text);
     border-radius: .625rem;
+    margin: 0 1.25rem;
+}
+
+.volume-box i {
+    padding-right: .5rem;
+    font-size: .75rem;
 }
 
 .scroll-volume {
     height: .1875rem;
-    width: 50%;
+    width: 10%;
     background-color: var(--color-text);
     border-radius: .625rem;
+    max-width: 100px;
+    width: 100%;
 }
 
