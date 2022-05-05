@@ -22,12 +22,22 @@
 .install-app img:hover {
     opacity: 1;
 }
+
 /* Main-content */
 .main-top .btn:hover {
     transform: scale(1.1);
 }
 
 .list-main-center ul li:first-child::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 35px;
+    background-color: var(--color-line);
+    margin: .125rem auto;
+}
+
+.list-main-center ul li:hover::after {
     content: "";
     display: block;
     height: 2px;

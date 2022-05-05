@@ -1,0 +1,171 @@
+/* Desktop first */
+@media screen and (max-width: 1000px) {
+    .img-song {
+        max-width: 90px;
+    }
+}
+
+
+@media screen and (max-width: 987px) {
+    .img-song {
+        max-width: 90px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .img-song {
+        max-width: 90px;
+    }
+
+    .favorites {
+        padding-left: 0;
+    }
+
+    .box-container .box:last-child {
+        justify-content: end;
+    }
+}
+
+
+@media screen and (max-width: 870px) {
+    .albums-container .album {
+        max-width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .albums-container .album {
+        max-width: 150px;
+    }
+
+    .list-main-center li {
+        padding-bottom: .625rem;
+    }
+
+    .box-song img {
+        width: 50px;
+    }
+
+    .name-song {
+        font-size: .75rem;
+    }
+
+    .icone-bar i {
+        padding-right: .3125rem;
+    }
+}
+
+
+@media screen and (max-width: 545px) {
+    .sidebar {
+        width: 50px;
+        padding: .125rem .625rem;
+    }
+
+    .icons {
+        max-width: 50px;
+    }
+
+    .row .album {
+        max-width: 180px;
+    }
+
+    .account img {
+        max-width: 25px;
+    }
+
+    .logo img:last-child,
+    .icone-sidebar a,
+    .icons.before::before,
+    .add-playlist,
+    .list-playlist,
+    .install-app span,
+    .account span {
+        display: none;
+    }
+
+    .logo-none {
+        display: block;
+        width: 25px;
+    }
+
+    .icone-bar i {
+        font-size: .75rem;
+    }
+
+    .icone-bar i:nth-child(3) {
+        font-size: 1.5625rem;
+    }
+
+    .box-large {
+        padding-left: 2.8125rem;
+    }
+
+    .bar-minute {
+        font-size: .8125rem;
+    }
+
+    .scroll-volume {
+        max-width: 50px;
+    }
+
+    .img-song {
+        max-width: 30px;
+    }
+
+    .name-song {
+        padding-left: .625rem;
+    }
+
+    .favorites,
+    .name-song {
+        font-size: .625rem;
+    }
+
+    .albums-container {
+        text-align: center;
+        padding: 0 1.8125rem;
+    }
+
+}
+
+
+@media screen and (max-width: 492px) {
+    .box-song,
+    .box:last-child {
+        display: none;
+    }
+
+    .list-main-center ul {
+        display: block;
+        text-align: center;
+    }
+
+    .list-main-center ul li:last-child {
+        padding-right: 1.25rem;
+    }
+    
+    .albums-container h2 {
+        font-size: 1.5625rem;
+    }
+
+    .box-large {
+        padding-right: 0;
+    }
+
+    .albums-container {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .albums-container .row {
+        justify-content: center;
+    }
+
+    .album {
+        max-width: 200px;
+    }
+}
+

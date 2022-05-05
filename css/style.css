@@ -60,6 +60,10 @@ body {
     padding: .625rem 0;
 }
 
+.logo-none {
+    display: none;
+}
+
 .icone-sidebar {
     padding-top: 1.25rem;
 }
@@ -208,7 +212,7 @@ body {
 
 .list-main-center ul li {
     list-style: none;
-    padding-right: 2.8125rem;
+    padding-right: 1.25rem;
 }
 
 .list-main-center ul li:last-child {
@@ -259,6 +263,7 @@ body {
 .popular-artists .album-img {
     border-radius: 50%;
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 
 .albums-container p {
