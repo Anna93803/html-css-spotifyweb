@@ -37,6 +37,15 @@
     margin: .125rem auto;
 }
 
+.list-main-center ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 35px;
+    background-color: #141922;
+    margin: .125rem auto;
+}
+
 .list-main-center ul li:hover::after {
     content: "";
     display: block;
@@ -59,7 +68,6 @@
     left: 0;
     bottom: 0;
     right: 0;
-    transition: 0.3s;
 }
 
 .overlay:hover::after {
@@ -110,7 +118,6 @@
     position: absolute;
     bottom: -0.3125rem;
     right: -0.25rem;
-    transition: 0.3s;
 }
 
 .play-line-time:hover::after {

@@ -3,7 +3,7 @@
     .img-song {
         max-width: 90px;
     }
-}
+} 
 
 
 @media screen and (max-width: 987px) {
@@ -129,43 +129,5 @@
         padding: 0 1.8125rem;
     }
 
-}
-
-
-@media screen and (max-width: 492px) {
-    .box-song,
-    .box:last-child {
-        display: none;
-    }
-
-    .list-main-center ul {
-        display: block;
-        text-align: center;
-    }
-
-    .list-main-center ul li:last-child {
-        padding-right: 1.25rem;
-    }
-    
-    .albums-container h2 {
-        font-size: 1.5625rem;
-    }
-
-    .box-large {
-        padding-right: 0;
-    }
-
-    .albums-container {
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .albums-container .row {
-        justify-content: center;
-    }
-
-    .album {
-        max-width: 200px;
-    }
 }
 

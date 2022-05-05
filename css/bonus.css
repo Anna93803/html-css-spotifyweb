@@ -1,0 +1,59 @@
+/* BONUS */
+@media screen and (max-width: 492px) {
+    .box-song,
+    .box:last-child {
+        display: none;
+    }
+
+    .list-main-center ul {
+        display: block;
+        text-align: center;
+    }
+
+    .list-main-center ul li:last-child {
+        padding-right: 1.25rem;
+    }
+    
+    .albums-container h2 {
+        font-size: 1.5625rem;
+    }
+
+    .box-large {
+        padding-right: 0;
+    }
+
+    .albums-container {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .albums-container .row {
+        justify-content: center;
+    }
+
+    .album {
+        max-width: 200px;
+    }
+}
+
+
+@media screen and (max-height: 300px) {
+    .main-top {
+        display: none;
+    }
+
+    .list-main-center {
+        padding: 2.8125rem 0;
+    }
+}
+
+
+.fa-shuffle:hover,
+.fa-backward-step:hover,
+.fa-forward-step:hover,
+.fa-arrow-rotate-right:hover,
+.fa-list:hover,
+.fa-display:hover,
+.fa-volume-high:hover {
+    transform: scale(1.1);
+}
