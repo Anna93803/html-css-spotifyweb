@@ -1,5 +1,5 @@
 /* Sidebar */
-.icone-sidebar a:hover,
+.icone-sidebar:hover,
 .list-playlist li:hover,
 .add-playlist:hover,
 .add-list:hover,
@@ -9,6 +9,7 @@
     color: var(--color-white);
     cursor: pointer;
 }
+
 
 .icons img:hover {
     opacity: 1;
